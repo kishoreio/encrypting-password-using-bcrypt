@@ -22,7 +22,7 @@ const compareHash = (plainPassword, hashPassword) => {
   });
 };
 
-const plainPassword = "admin123";
+const plainPassword = "admin@123";
 generateHash(plainPassword)
   .then((result) => {
     compareHash(plainPassword, result)
